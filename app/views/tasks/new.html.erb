@@ -1,0 +1,9 @@
+
+<form action="/tasks" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <h2>Title: </h2><input type="text" name="title">
+  <h2>Details: </h2><input type="text" name="details">
+  <input type="submit" value="create">
+</form>
+
+<%= link_to "back", tasks_path %>
